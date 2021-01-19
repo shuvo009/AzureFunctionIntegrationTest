@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction", "Ema
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.IntegrationTest", "EmailSendingFunction.IntegrationTest\EmailSendingFunction.IntegrationTest.csproj", "{556AD811-6F62-4664-A622-D0E128080324}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.Core", "EmailSendingFunction.Core\EmailSendingFunction.Core.csproj", "{3E734EE9-D169-43D7-816F-F645D60F82C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.Service", "EmailSendingFunction.Service\EmailSendingFunction.Service.csproj", "{1BD08D07-4F7B-4312-983B-3620469A3D6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{556AD811-6F62-4664-A622-D0E128080324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{556AD811-6F62-4664-A622-D0E128080324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{556AD811-6F62-4664-A622-D0E128080324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E734EE9-D169-43D7-816F-F645D60F82C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E734EE9-D169-43D7-816F-F645D60F82C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E734EE9-D169-43D7-816F-F645D60F82C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E734EE9-D169-43D7-816F-F645D60F82C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

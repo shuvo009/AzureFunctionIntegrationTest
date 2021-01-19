@@ -19,4 +19,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmailSendingFunction.Core\EmailSendingFunction.Core.csproj" />
+    <ProjectReference Include="..\EmailSendingFunction.Service\EmailSendingFunction.Service.csproj" />
+    <ProjectReference Include="..\EmailSendingFunction\EmailSendingFunction.csproj" />
+  </ItemGroup>
+
 </Project>
