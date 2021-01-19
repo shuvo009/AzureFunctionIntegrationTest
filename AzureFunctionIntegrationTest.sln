@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction", "EmailSendingFunction\EmailSendingFunction.csproj", "{DC2096F6-42F1-4291-AC72-AD011788C924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.IntegrationTest", "EmailSendingFunction.IntegrationTest\EmailSendingFunction.IntegrationTest.csproj", "{556AD811-6F62-4664-A622-D0E128080324}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC2096F6-42F1-4291-AC72-AD011788C924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2096F6-42F1-4291-AC72-AD011788C924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2096F6-42F1-4291-AC72-AD011788C924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2096F6-42F1-4291-AC72-AD011788C924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556AD811-6F62-4664-A622-D0E128080324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556AD811-6F62-4664-A622-D0E128080324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556AD811-6F62-4664-A622-D0E128080324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556AD811-6F62-4664-A622-D0E128080324}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {684D7CB2-A20F-4DEA-BDFC-CAD825B87009}
+	EndGlobalSection
+EndGlobal
