@@ -3,7 +3,7 @@ using Xunit;
 
 namespace EmailSendingFunction.IntegrationTest
 {
-    public class UnitTest1
+    public class EmailSendingFunctionTest
     {
         [Fact]
         public void Test1()

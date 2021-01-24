@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction", "EmailSendingFunction\EmailSendingFunction.csproj", "{DC2096F6-42F1-4291-AC72-AD011788C924}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingFunction", "EmailSendingFunction\EmailSendingFunction.csproj", "{DC2096F6-42F1-4291-AC72-AD011788C924}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.IntegrationTest", "EmailSendingFunction.IntegrationTest\EmailSendingFunction.IntegrationTest.csproj", "{556AD811-6F62-4664-A622-D0E128080324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingFunction.IntegrationTest", "EmailSendingFunction.IntegrationTest\EmailSendingFunction.IntegrationTest.csproj", "{556AD811-6F62-4664-A622-D0E128080324}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.Core", "EmailSendingFunction.Core\EmailSendingFunction.Core.csproj", "{3E734EE9-D169-43D7-816F-F645D60F82C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingFunction.Core", "EmailSendingFunction.Core\EmailSendingFunction.Core.csproj", "{3E734EE9-D169-43D7-816F-F645D60F82C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.Service", "EmailSendingFunction.Service\EmailSendingFunction.Service.csproj", "{1BD08D07-4F7B-4312-983B-3620469A3D6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingFunction.Service", "EmailSendingFunction.Service\EmailSendingFunction.Service.csproj", "{1BD08D07-4F7B-4312-983B-3620469A3D6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0F50857-D95E-41A5-BFB2-379E53346909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.Repository", "EmailSendingFunction.Repository\EmailSendingFunction.Repository.csproj", "{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BD08D07-4F7B-4312-983B-3620469A3D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{556AD811-6F62-4664-A622-D0E128080324} = {B0F50857-D95E-41A5-BFB2-379E53346909}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {684D7CB2-A20F-4DEA-BDFC-CAD825B87009}
