@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingFunction.Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0F50857-D95E-41A5-BFB2-379E53346909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendingFunction.Repository", "EmailSendingFunction.Repository\EmailSendingFunction.Repository.csproj", "{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailSendingFunction.Repository", "EmailSendingFunction.Repository\EmailSendingFunction.Repository.csproj", "{1A4C8AFE-B90C-406C-A5C0-FD69407388D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

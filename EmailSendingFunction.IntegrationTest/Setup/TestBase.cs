@@ -1,6 +1,10 @@
 ﻿using EmailSendingFunction.Core.Interface;
+using EmailSendingFunction.Implementations;
 using EmailSendingFunction.Repository;
+using EmailSendingFunction.Repository.Context;
 using EmailSendingFunction.Service;
+using Microsoft.Azure.WebJobs.Host;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -10,12 +14,18 @@ namespace EmailSendingFunction.IntegrationTest.Setup
 {
     public abstract class TestBase
     {
-        internal static string DatabaseName = "ReportTestDatabase";
+        protected readonly Mock<IEmailSender> emailSenderMock = new Mock<IEmailSender>();
 
         internal IHost HostSetup()
         {
             var builder = new HostBuilder();
-            builder.ConfigureServices((context, services) => { RegisterDependencies(services); });
+            builder.ConfigureServices((context, services) =>
+            {
+                RegisterDependencies(services);
+
+                services.AddDbContext<DatabaseContext>(options => options.UseInMemoryDatabase("TestDatabase"));
+            });
+
             var host = builder.Build();
             return host;
         }
@@ -30,7 +40,11 @@ namespace EmailSendingFunction.IntegrationTest.Setup
 
         private void RegisterDependencies(IServiceCollection services)
         {
-            services.AddTransient<IEmailSender, SendGridEmailSender>();
+            services.AddTransient<EmailSendingFunction, EmailSendingFunction>();
+            services.AddSingleton<IJobActivator>(new WebJobActivator(services.BuildServiceProvider()));
+
+
+            services.AddTransient(s => emailSenderMock.Object);
             services.AddTransient<IEmailLogRepository, EmailLogRepository>();
             services.AddTransient<IEmailService, EmailService>();
         }
