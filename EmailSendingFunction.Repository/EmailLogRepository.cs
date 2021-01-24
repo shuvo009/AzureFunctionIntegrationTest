@@ -27,7 +27,7 @@ namespace EmailSendingFunction.Repository
                 Subject = emailModel.Subject
             };
 
-            _emailModels.Add(log);
+            await _emailModels.AddAsync(log);
             await _databaseContext.SaveChangesAsync();
         }
     }

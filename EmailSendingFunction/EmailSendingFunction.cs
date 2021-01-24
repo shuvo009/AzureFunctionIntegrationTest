@@ -10,11 +10,11 @@ namespace EmailSendingFunction
 {
     public class EmailSendingFunction
     {
-        private readonly IEmailSender _emailSender;
+        private readonly IEmailService _emailService;
 
-        public EmailSendingFunction(IEmailSender emailSender)
+        public EmailSendingFunction(IEmailService emailService)
         {
-            _emailSender = emailSender;
+            _emailService = emailService;
         }
 
         [FunctionName("SendEmail")]
@@ -25,7 +25,7 @@ namespace EmailSendingFunction
             try
             {
                 var emailModel = JsonConvert.DeserializeObject<EmailModel>(message);
-                await _emailSender.Send(emailModel);
+                await _emailService.SendEmail(emailModel);
             }
             catch (Exception e)
             {

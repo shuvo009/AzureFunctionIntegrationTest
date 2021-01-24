@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using EmailSendingFunction.Core.Interface;
+using EmailSendingFunction.Repository;
+using EmailSendingFunction.Service;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -27,6 +30,9 @@ namespace EmailSendingFunction.IntegrationTest.Setup
 
         private void RegisterDependencies(IServiceCollection services)
         {
+            services.AddTransient<IEmailSender, SendGridEmailSender>();
+            services.AddTransient<IEmailLogRepository, EmailLogRepository>();
+            services.AddTransient<IEmailService, EmailService>();
         }
 
         #endregion

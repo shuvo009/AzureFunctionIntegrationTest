@@ -10,6 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EmailSendingFunction.Core\EmailSendingFunction.Core.csproj" />
+    <ProjectReference Include="..\EmailSendingFunction.Repository\EmailSendingFunction.Repository.csproj" />
     <ProjectReference Include="..\EmailSendingFunction.Service\EmailSendingFunction.Service.csproj" />
   </ItemGroup>
   <ItemGroup>
